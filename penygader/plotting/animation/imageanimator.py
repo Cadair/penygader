@@ -227,9 +227,7 @@ class BaseFuncAnimator(object):
                        'fargs':[im, self.sliders[slider]._slider]}
         anim_kwargs.update(kwargs)
         
-        anim_func = lambda val, im, sl: self.slider_functions[slider](val, im, sl)
-        
-        ani = mplanim.FuncAnimation(anim_fig, anim_func, **anim_kwargs)
+        ani = mplanim.FuncAnimation(anim_fig, self.slider_functions[slider], **anim_kwargs)
 
         return ani
     
