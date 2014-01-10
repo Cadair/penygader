@@ -4,7 +4,17 @@ Created on Mon Dec  3 16:24:02 2012
 
 @author: Stuart Mumford
 
-This module contains personal matplotlib customisations and optional functions.
+This module imports matplotlib with customisations I use when creating
+figures for inclusion in print publications.
+
+Usage
+-----
+
+>>> from penygader.ploting.publication import *
+
+>>> plt.plot(x,y)
+>>> thick_ticks(plt.gca())
+>>> plt.show()
 """
 import matplotlib as mpl
 #Do rcParams bit
