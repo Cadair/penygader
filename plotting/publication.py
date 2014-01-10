@@ -10,7 +10,7 @@ figures for inclusion in print publications.
 Usage
 -----
 
->>> from penygader.ploting.publication import *
+>>> from penygader.plotting.publication import *
 
 >>> plt.plot(x,y)
 >>> thick_ticks(plt.gca())
